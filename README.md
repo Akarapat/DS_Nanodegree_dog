@@ -12,6 +12,7 @@ The goal of this project is to build covolutional neural networks (CNN) to class
 
 ## File descriptions
 - dog_app.ipynb: Jupyter notebook containing implementation of CNN to classify breeds of dogs
+- dog_app.html: Jupyter notebook rendered in html format
 - weights.best.from_scratch.hdf5, weights.best.VGG16.hdf5, weights.best.Resnet50.hdf5: Weight of CNN model build from scratch, and CNN model via transfer learning utilizing VGG16 and Resnet50 architecture
 - image files (dog1.jpg, dog2.jpg, dog3.jpg, human1.jpg, human2.jpg, human3.jpg): These images are used to test the model
 
