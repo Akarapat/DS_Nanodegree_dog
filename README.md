@@ -17,4 +17,4 @@ The goal of this project is to build covolutional neural networks (CNN) to class
 
 ## Findings
 
-The model via transfer learning utilziing Resnet50 architecture achieve an accuracy of more than 60%.  It is then further used to classify dog and human images download from the Internet.
+The model via transfer learning utilziing Resnet50 architecture achieve an accuracy of more than 60%.  It is then further used to classify dog and human images download from the Internet.  Unforunately, the algorithm is unable to recognize some of the human faces
