@@ -14904,10 +14904,6 @@ Epoch 20/20
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### TODO: Write a function that takes a path to an image as input</span>
 <span class="c1">### and returns the dog breed that is predicted by the model.</span>
 <span class="k">def</span> <span class="nf">resnet50_predict_breed</span><span class="p">(</span><span class="n">img_path</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    Input: An image</span>
-<span class="sd">    Output: Return breed of dog which resemble the object in the image if a human face or a dog is detected</span>
-<span class="sd">    If a human face or a dog is not detected, then return an error message&#39;&#39;&#39;</span>
     <span class="c1"># extract bottleneck features</span>
     <span class="n">bottleneck_feature</span> <span class="o">=</span> <span class="n">extract_Resnet50</span><span class="p">(</span><span class="n">path_to_tensor</span><span class="p">(</span><span class="n">img_path</span><span class="p">))</span>
     
@@ -14954,6 +14950,13 @@ Epoch 20/20
 <span class="c1">### Feel free to use as many code cells as needed.</span>
 
 <span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="n">img_path</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Input: file path to an image</span>
+<span class="sd">    Output:</span>
+<span class="sd">        Return the image</span>
+<span class="sd">        Return breed of dog which resemble the object in the image if a human face or a dog is detected</span>
+<span class="sd">        Return an error message if no human face and no dog is detected</span>
+<span class="sd">    &#39;&#39;&#39;</span>
     <span class="n">img</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">img_path</span><span class="p">)</span>
     <span class="n">cv_rgb</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">COLOR_BGR2RGB</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">cv_rgb</span><span class="p">)</span>
