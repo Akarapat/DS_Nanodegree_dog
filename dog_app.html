@@ -13246,6 +13246,67 @@ There are 836 test dog images.
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Check-whether-there-is-a-problem-of-class-imbalance">Check whether there is a problem of class imbalance<a class="anchor-link" href="#Check-whether-there-is-a-problem-of-class-imbalance">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Examine into the breakdown of images by breeds of dog in training set</span>
+<span class="n">train_targets</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[15]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([ 64.,  58.,  52.,  63.,  77.,  64.,  50.,  66.,  34.,  50.,  66.,
+        66.,  46.,  69.,  73.,  59.,  62.,  50.,  48.,  62.,  64.,  47.,
+        65.,  62.,  37.,  41.,  64.,  35.,  74.,  52.,  56.,  65.,  45.,
+        64.,  53.,  65.,  50.,  57.,  69.,  53.,  69.,  63.,  50.,  64.,
+        53.,  67.,  54.,  54.,  50.,  50.,  62.,  49.,  47.,  57.,  50.,
+        65.,  71.,  50.,  47.,  60.,  61.,  53.,  53.,  39.,  42.,  33.,
+        34.,  63.,  51.,  47.,  62.,  48.,  42.,  41.,  44.,  64.,  43.,
+        40.,  59.,  46.,  56.,  61.,  46.,  50.,  37.,  53.,  66.,  51.,
+        53.,  58.,  57.,  44.,  35.,  44.,  49.,  43.,  50.,  46.,  42.,
+        34.,  48.,  29.,  58.,  42.,  31.,  50.,  46.,  26.,  45.,  33.,
+        44.,  54.,  39.,  35.,  63.,  30.,  48.,  53.,  31.,  39.,  28.,
+        32.,  44.,  50.,  34.,  30.,  41.,  30.,  48.,  44.,  30.,  26.,
+        30.])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here training set is broken down according to breeds of dog.  It appears that there is no problem of class imbalance.  Therefore, accuracy is utilized as the metric to evaluate the CNN model which will be trained in this exercise.  If there is a problem of class imbalance, I will use other metrics such as F1 instead.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Import-Human-Dataset">Import Human Dataset<a class="anchor-link" href="#Import-Human-Dataset">&#182;</a></h3><p>In the code cell below, we import a dataset of human images, where the file paths are stored in the numpy array <code>human_files</code>.</p>
 
 </div>
