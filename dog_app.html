@@ -14904,6 +14904,10 @@ Epoch 20/20
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### TODO: Write a function that takes a path to an image as input</span>
 <span class="c1">### and returns the dog breed that is predicted by the model.</span>
 <span class="k">def</span> <span class="nf">resnet50_predict_breed</span><span class="p">(</span><span class="n">img_path</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Input: An image</span>
+<span class="sd">    Output: Return breed of dog which resemble the object in the image if a human face or a dog is detected</span>
+<span class="sd">    If a human face or a dog is not detected, then return an error message&#39;&#39;&#39;</span>
     <span class="c1"># extract bottleneck features</span>
     <span class="n">bottleneck_feature</span> <span class="o">=</span> <span class="n">extract_Resnet50</span><span class="p">(</span><span class="n">path_to_tensor</span><span class="p">(</span><span class="n">img_path</span><span class="p">))</span>
     
